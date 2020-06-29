@@ -102,7 +102,7 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "# open file to run functions in file data\n",
+    "# Open file to run functions in file data\n",
     "with open(budget_csv, encoding='utf-8-sig') as csvfile:\n",
     "    csvreader = csv.reader(csvfile, delimiter=\",\")\n",
     "    \n",
@@ -134,11 +134,11 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 25,
+   "execution_count": 8,
    "metadata": {},
    "outputs": [],
    "source": [
-    "# create variables for each statement\n",
+    "# Create variables for each statement\n",
     "\n",
     "#The total number of months and amount included in the dataset\n",
     "total_months = total_recrods(amount)\n",
@@ -156,7 +156,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 32,
+   "execution_count": 9,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -167,7 +167,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 33,
+   "execution_count": 10,
    "metadata": {},
    "outputs": [
     {
@@ -198,43 +198,19 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 34,
+   "execution_count": 11,
    "metadata": {},
    "outputs": [],
    "source": [
-    "# Example\n",
+    "# Export a text file with the results\n",
     "\n",
-    "# Financial Analysis\n",
-    "# ----------------------------\n",
-    "# Total Months: 86\n",
-    "# Total: $38382578\n",
-    "# Average  Change: $-2315.12\n",
-    "# Greatest Increase in Profits: Feb-2012 ($1926159)\n",
-    "# Greatest Decrease in Profits: Sep-2013 ($-2196167)\n"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 35,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "# In addition, your final script should both print the analysis to the terminal and export a text file with the results."
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 36,
-   "metadata": {},
-   "outputs": [],
-   "source": [
     "# Specify the file to write to\n",
     "output_path = os.path.join(\"Output\", \"new.csv\")"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 37,
+   "execution_count": 12,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -249,13 +225,6 @@
     "\n",
     "    csvwriter.writerows(dict.items())"
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": []
   },
   {
    "cell_type": "code",
