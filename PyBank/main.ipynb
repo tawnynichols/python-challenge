@@ -205,7 +205,7 @@
     "# Export a text file with the results\n",
     "\n",
     "# Specify the file to write to\n",
-    "output_path = os.path.join(\"Output\", \"new.csv\")"
+    "output_path = os.path.join(\"analysis\", \"budget_output.csv\")"
    ]
   },
   {
